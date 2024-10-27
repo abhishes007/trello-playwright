@@ -8,6 +8,12 @@ jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
+    env:
+     TRELLO_EMAIL: ${{secrets.TRELLO_EMAIL}}
+     TRELLO_PASSWORD: ${{secrets.TRELLO_PASSWORD}}
+     API_TOKEN: ${{secrets.API_TOKEN}}
+     API_KEY: ${{secrets.API_KEY}}
+     API_URL: ${{secrets.API_URL}}
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
