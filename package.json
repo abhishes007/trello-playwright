@@ -1,0 +1,18 @@
+{
+  "name": "trello-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "runTest-headless": "npx playwright test",
+    "runTest-headed": "npx playwright test --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.48.2",
+    "@types/node": "^22.8.1",
+    "dotenv": "^16.4.5"
+  }
+}
