@@ -31,3 +31,25 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
+  generate-report:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Download Allure Results
+      uses: actions/download-artifact@v4
+      with:
+        name: allure-results
+        path: allure-results/
+    - name: Install Allure CLI
+      run: |
+        wget https://github.com/allure-framework/allure2/releases/download/2.22.5/allure-2.22.5.zip
+        unzip allure-2.22.5.zip -d allure
+    - name: Generate Allure Report
+      run: |
+        allure/bin/allure generate allure-results -o allure-report
+    - name: Deploy Allure Report to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: allure-report
