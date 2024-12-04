@@ -32,7 +32,6 @@ jobs:
         path: playwright-report/
         retention-days: 30
   generate-report:
-    needs: test
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
