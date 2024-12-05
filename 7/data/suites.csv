@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","0","Drag and Drop task from one list to another","chromium","Thu Dec 05 04:37:18 GMT 2024","skipped","Thu Dec 05 04:37:18 GMT 2024","","trello-e2e.spec.ts","",""
+"","30000","Go to Board and Create create BackLog list using UI","chromium","Thu Dec 05 04:36:12 GMT 2024","broken","Thu Dec 05 04:36:42 GMT 2024","","trello-e2e.spec.ts","",""
+"","0","Add Tasks to To-Do List","chromium","Thu Dec 05 04:37:18 GMT 2024","skipped","Thu Dec 05 04:37:18 GMT 2024","","trello-e2e.spec.ts","",""
+"","1","Edit Task checklist item order","chromium","Thu Dec 05 04:37:18 GMT 2024","skipped","Thu Dec 05 04:37:18 GMT 2024","","trello-e2e.spec.ts","",""
+"","1","Create Template for Task","chromium","Thu Dec 05 04:37:18 GMT 2024","skipped","Thu Dec 05 04:37:18 GMT 2024","","trello-e2e.spec.ts","",""
+"","0","Create Task from Template","chromium","Thu Dec 05 04:37:18 GMT 2024","skipped","Thu Dec 05 04:37:18 GMT 2024","","trello-e2e.spec.ts","",""
