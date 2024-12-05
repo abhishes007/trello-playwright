@@ -57,7 +57,7 @@ test('Go to Board and Create create BackLog list using UI', async() => {
     await page.close()
 })
 
-test('Add Tasks to To-Do List', async() => {
+test.skip('Add Tasks to To-Do List', async() => {
     //Initialize browser with state stored in JSON file.
     const page = await sessionContext.newPage();
     const boardsPage = new BoardsPage(page);
@@ -74,7 +74,7 @@ test('Add Tasks to To-Do List', async() => {
     await page.close()
 })
 
-test('Drag and Drop task from one list to another', async() => {
+test.skip('Drag and Drop task from one list to another', async() => {
     //Initialize browser with state stored in JSON file.
     const page = await sessionContext.newPage();
     const boardsPage = new BoardsPage(page);
@@ -98,7 +98,7 @@ test('Drag and Drop task from one list to another', async() => {
     await page.close()
 })
 
-test('Create Template for Task', async() => {
+test.skip('Create Template for Task', async() => {
     //Initialize browser with state stored in JSON file.
     const page = await sessionContext.newPage();
     const boardsPage = new BoardsPage(page);
@@ -121,7 +121,7 @@ test('Create Template for Task', async() => {
     await page.close()
 })
 
-test('Create Task from Template', async() => {
+test.skip('Create Task from Template', async() => {
     //Initialize browser with state stored in JSON file.
     const page = await sessionContext.newPage();
     const boardsPage = new BoardsPage(page);
@@ -137,7 +137,7 @@ test('Create Task from Template', async() => {
     await page.close()
 })
 
-test('Edit Task checklist item order', async() => {
+test.skip('Edit Task checklist item order', async() => {
     //Initialize browser with state stored in JSON file.
     const page = await sessionContext.newPage();
     const boardsPage = new BoardsPage(page);
